@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Targante &mdash; Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to Targante Hotel - Your perfect getaway for comfort and luxury." />
+    <meta name="keywords" content="Targante Hotel, luxury hotel, comfortable stay, vacation, relaxation" />
+    <meta name="author" content="Targante Hotel" />
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/superfish.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/cs-select.css">
+    <link rel="stylesheet" href="css/cs-skin-border.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="images/tree.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/tree.png" type="image/x-icon">
+
+    <style>
+        /* Custom CSS for the interactive menu */
+        #fh5co-restaurant-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .menu-category {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 20px;
+            background: #f8f8f8;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .menu-category:hover {
+            background: #e0e0e0;
+        }
+        .menu-subcategory {
+            display: none;
+            position: absolute;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .menu-category:hover .menu-subcategory {
+            display: block;
+        }
+        .menu-item {
+            padding: 5px 10px;
+            margin: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Slider Styles */
+        .slider-container {
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+        .slider-track {
+            display: flex;
+            animation: slide 20s linear infinite;
+        }
+        .slider-item {
+            flex: 0 0 100%; /* Default to 1 image per view on mobile */
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        .slider-item img {
+            width: 100%;
+            height: auto; /* Adjust height automatically */
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        .slider-item:hover img {
+            transform: scale(1.02);
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .slider-track:hover {
+            animation-play-state: paused;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .slider-item {
+                flex: 0 0 50%; /* 2 images per view on tablets */
+            }
+        }
+        @media (min-width: 992px) {
+            .slider-item {
+                flex: 0 0 33.33%; /* 3 images per view on desktops */
+            }
+        }
+
+        /* General mobile adjustments */
+        @media (max-width: 767px) {
+            .services, .station-service {
+                margin-bottom: 20px;
+            }
+            .slider-item img {
+                height: 200px; /* Adjust height for mobile */
+            }
+            .fh5co-parallax h1 {
+                font-size: 2rem; /* Smaller heading for mobile */
+            }
+            .desc h3 {
+                font-size: 1.2rem; /* Smaller subheadings for mobile */
+            }
+            .desc p {
+                font-size: 0.9rem; /* Smaller text for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="fh5co-wrapper">
+        <div id="fh5co-page">
+            <div id="fh5co-header">
+				<header id="fh5co-header-section">
+					<div class="container">
+						<div class="nav-header">
+
+							<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+							
+							<h1 id="fh5co-logo"><a href="index.html">Targante Hotel</a></h1>
+							<nav id="fh5co-menu-wrap" role="navigation">
+								<ul class="sf-menu" id="fh5co-primary-menu">
+									<li><a class="active" href="index.html">Home</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+            </div>
+
+            <!-- Parallax Section -->
+            <div class="fh5co-parallax" style="background-image: url(images/slider1.jpg);" data-stellar-background-ratio="0.5">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+                            <div class="fh5co-intro fh5co-table-cell">
+                                <h1 class="text-center">We Offer Services</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div id="fh5co-services-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services">
+                                <span><i class="ti-location-pin"></i></span>
+                                <div class="desc">
+                                    <h3>Accessible Location</h3>
+                                    <p>Our venue is nestled in a tranquil area, surrounded by scenic views and natural beauty.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services">
+                                <span><i class="ti-alarm-clock"></i></span>
+                                <div class="desc">
+                                    <h3>Open 24/7</h3>
+                                    <p>Our services are available around the clock, ensuring you can access everything you need at any time.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services">
+                                <span><i class="ti-calendar"></i></span>
+                                <div class="desc">
+                                    <h3>Reservation</h3>
+                                    <p>Reservations are quick and easy with our efficient system. Simply send us an email to reserve your spot.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services">
+                                <span><i class="ti-user"></i></span>
+                                <div class="desc">
+                                    <h3>Friendly Staff</h3>
+                                    <p>Our team is dedicated to providing a warm and welcoming environment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services">
+                                <span><i class="ti-signal"></i></span>
+                                <div class="desc">
+                                    <h3>Free Wifi</h3>
+                                    <p>Stay connected during your visit with our complimentary high-speed Wi-Fi service.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Station Services Section -->
+            <div id="fh5co-station-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2>Station Services</h2>
+                            <p>We provide a fully-equipped gas station to ensure your journey is smooth and uninterrupted.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="station-service">
+                                <span><img src="images/fuel.png" alt="Fuel Icon" class="custom-icon"></span>
+                                <div class="desc">
+                                    <h3>Fuel Services</h3>
+                                    <p>We offer high-quality fuel options, including premium and diesel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="station-service">
+                                <span><img src="images/tire.png" alt="Maintenance Icon" class="custom-icon"></span>
+                                <div class="desc">
+                                    <h3>Car Maintenance</h3>
+                                    <p>Our gas station includes basic car maintenance services.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="station-service">
+                                <span><img src="images/oil.png" alt="Store Icon" class="custom-icon"></span>
+                                <div class="desc">
+                                    <h3>Oil Change (Vidange)</h3>
+                                    <p>Keep your engine running smoothly with our professional oil change services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Slider Section -->
+            <div class="slider-container">
+                <div class="slider-track">
+                    <div class="slider-item"><img src="images/plaque.jpeg" alt="Restrooms"></div>
+                    <div class="slider-item"><img src="images/mosque.jpeg" alt="Prayer Room"></div>
+                    <div class="slider-item"><img src="images/toilets.jpeg" alt="Signage"></div>
+                    <div class="slider-item"><img src="images/station_background.jpeg" alt="Signage"></div>
+                    <!-- Duplicated images for seamless looping -->
+                    <div class="slider-item"><img src="images/plaque.jpeg" alt="Restrooms"></div>
+                    <div class="slider-item"><img src="images/mosque.jpeg" alt="Prayer Room"></div>
+                    <div class="slider-item"><img src="images/toilets.jpeg" alt="Signage"></div>
+                    <div class="slider-item"><img src="images/station_background.jpeg" alt="Signage"></div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer" class="fh5co-bg-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
+                                <li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
+                                <li><a href="#"><i class="icon-instagram-with-circle"></i></a></li>
+                                <li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
+                            </ul>
+                            <p><small>&copy; 2025 Targante Hotel. All Rights Reserved.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.st
